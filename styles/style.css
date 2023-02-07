@@ -1,1 +1,19 @@
-
+.bg-info {
+    background-color: #89A1EF !important;
+}
+#btn-nav {
+    background-color: #FECEF1;
+    border: none;
+    color: black;
+}
+body {
+    background-color: #FECEF1;
+}
+.navbar-brand, #footer {
+    font-family: "Signika Negative";
+}
+.btn-outline-primary {
+    background-color: #32CBFF !important;
+    border: none;
+    color: black;
+}

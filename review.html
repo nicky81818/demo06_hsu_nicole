@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Demo 06</title>
+    <meta name="comp1800 template" content="My 1800 App">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap Library CSS CDN go here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Boostrap Library JS CDN  go here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Other libraries go here -->
+    <!-- Google Icons (Material Design)-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Link to styles of your own -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!------------------------------>
+    <!-- Your HTML Layout go here -->
+    <!------------------------------>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo_no_white.png" height="40">
+                Nicole's Things</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hello There</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" id="btn-nav" type="submit">Click</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <form class="container">
+        <!-- text box -->
+        <div class="card-body form-group">
+            <label for="hikename">Name of thing:</label>
+            <input type="text" id="thingname" class="form-control">
+        </div>
+        <!-- radio button -->
+        <div class="card-body form-group">
+            <label for="options">Is this a pretty page?</label>
+            <br>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group" id="options">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio1">Yes</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio2">No</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio3">Maybe So</label>
+            </div>
+        </div>        
+        <!-- icons -->
+        <div class="card-body">
+            <p>Rate your overall experience:</p>
+            <span class="material-icons" id="heart1">favorite</span>
+            <span class="material-icons" id="heart2">favorite</span>
+            <span class="material-icons" id="heart3">favorite</span>
+            <span class="material-icons" id="heart4">favorite</span>
+            <span class="material-icons" id="heart5">favorite</span>
+        </div>
+
+        <!-- comments -->
+        <div class="card-body form-group mb-3 mt-2">
+            <label for="comment">Comments:</label>
+            <textarea class="form-control" rows="7" id="comment" name="text"></textarea>
+        </div>
+    </form>
+    <!-- copyright footer -->
+<div class="fixed-bottom py-3 bg-info">
+    <div class="container text-center" id="footer">
+        Footer? I hardly know her!
+    </div>
+</div>
+<!---------------------------------------------->
+    <!-- Your own JavaScript functions go here    -->
+    <!---------------------------------------------->
+    <!-- Link to scripts of your own -->
+    <!-- <script src="./scripts/script.js"></script> -->
+
+</body>
+
+</html>
